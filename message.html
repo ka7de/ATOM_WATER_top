@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="message.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <title>A±TOM WATER message</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
             <ul>
                 <li><a href="about.html">私たちについて</a></li>
                 <li id="accordion-item">
-                    <a href="item1.html" id="accordion">プロダクト</a>
+                    <p id="accordion">プロダクト</p>
                 </li>
                 <ul id="accordion-list">
                     <li><a href="item1.html">パワードウォーター</a></li>
@@ -28,6 +30,7 @@
         </div>
 
         <div class="visible-sp">
+            <div id="mask"></div>
             <div id="hamburger">
                 <span></span>
                 <span></span>
@@ -35,8 +38,14 @@
             </div>
             <nav>
                 <ul>
+                    <li class="to-top"><a href="index.html">トップページへ戻る</a></li>
                     <li><a href="about.html">私たちについて</a></li>
-                    <li><a href="item1.html">プロダクト</a></li>
+                    <li id="slidedown">プロダクト</li>
+                    <ul id="slideitem">
+                        <li><a href="item1.html">パワードウォーター</a></li>
+                        <li><a href="item2.html">パワードシャツ</a></li>
+                        <li><a href="item3.html">Q-UICK REACTOR</a></li>
+                    </ul>
                     <li><a href="message.html">代表メッセージ</a></li>
                     <li><a href="about.html">開発秘話</a></li>
                     <li><a href="media.html">メディア</a></li>
