@@ -27,6 +27,11 @@ $(function (){
         $(this).removeClass('show');
         $('#hamburger span').removeClass('show');
         $('nav').removeClass('show');
+
+        if($('#slidedown').hasClass('open')){
+            $('#slidedown').removeClass('open');
+            $('#slideitem').slideUp();
+        }
     });
 
     $('#slidedown').on('click',function(){
