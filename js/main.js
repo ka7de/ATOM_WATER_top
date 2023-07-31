@@ -52,11 +52,13 @@ $(function (){
     // スムーススクロール
 $(function(){
     $('a[href^="#"]').click(function(){
+        var h= $('header').outerHeight();
+        var adjust = h - 100;
         var speed = 500;
         var type = 'swing';
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top -80;
+        var position = target.offset().top + adjust;
         $('body,html').animate({'scrollTop':position},speed,type);
         return false;
     });
